@@ -11,7 +11,7 @@ class DeutschTui < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tungnguyenlam/language-learning-tui/releases/download/v0.4.0/deutsch-tui-macos-amd64"
-      sha256 "ccb78c09e116502eeebb5b286ee63987c8a79e098734f63b48ac263a3ee0b9a2"
+      sha256 "9b1c3a0eb6a36ef41bdf7e0313a586d2493b1cf53050ead600d794848aa26d97"
 
       define_method(:install) do
         bin.install "deutsch-tui-macos-amd64" => "deutsch-tui"
@@ -19,7 +19,7 @@ class DeutschTui < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tungnguyenlam/language-learning-tui/releases/download/v0.4.0/deutsch-tui-macos-arm64"
-      sha256 "c9a8aef7ff0b9d4f7d90ebbeadb807efe37adeb06578b911c13e5ab50c2f7806"
+      sha256 "8c3877e5efdca93cdd0c60a051f4ccc7583a52f56bf46d430f75465514884ffd"
 
       define_method(:install) do
         bin.install "deutsch-tui-macos-arm64" => "deutsch-tui"
@@ -30,14 +30,14 @@ class DeutschTui < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/tungnguyenlam/language-learning-tui/releases/download/v0.4.0/deutsch-tui-linux-amd64"
-      sha256 "acff61cece99610f938031dffc1921e04ba992f940c7a61c09dd6a25d19eb422"
+      sha256 "ad50977aa162635689df8db695a99d6073b93144eeac8430528fa861500ad333"
       define_method(:install) do
         bin.install "deutsch-tui-linux-amd64" => "deutsch-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tungnguyenlam/language-learning-tui/releases/download/v0.4.0/deutsch-tui-linux-arm64"
-      sha256 "9b97b8f2a8392b41e53454a59a146b0f1b410faa98731d99720929aaa4b1dded"
+      sha256 "6745255107b5f7c0c71eaceb2b485f693002bf96b6a94da33d1c1f5f9cefe201"
       define_method(:install) do
         bin.install "deutsch-tui-linux-arm64" => "deutsch-tui"
       end
